@@ -1,0 +1,17 @@
+
+@font-face {
+      font-family: "New York";
+      src: url("../fonts/NewYork.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Neue Frutiger World";
+    font-weight: normal;
+    src: url("../fonts/NeueFrutigerWorld-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Neue Frutiger World";
+    font-weight: bold;
+    src: url("../fonts/NeueFrutigerWorld-Bold.otf") format("opentype");
+}
