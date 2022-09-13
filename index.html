@@ -6,18 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./cdn/fonts.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
     <style>
-        p {
-            color: red;
-            font-family: "Neue Frutiger World";
+        body {
+            overflow-x: hidden;
+            overflow-y: hidden;
+            margin: 0;
+            max-height: 100vh;
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        h1 {
+            color: black;
+            font-weight: normal;
+            font-family: "New York";
+            text-transform: capitalize;
+            text-align: center;
+            line-height: 13vw;
+            /* font-size: 23vw; */
+            font-size: 20vw;
+            letter-spacing: 0;
+            /* letter-spacing: 1.6vw; */
+
+
+            white-space: nowrap;
+        }
+
+        .heading {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin: 0 auto;
+            margin-top: -100px;
+            max-width: 1920px;
+        }
+
+        .logo {
+            margin: 0 auto;
+            width: 12.68%;
+            height: 2%;
         }
     </style>
 </head>
 
 <body>
-    <h1>Works</h1>
-    <p>TEST IS REAL</p>
+    <div class="container">
+        <div class="logo">
+            <img src="cdn/solovoi-logo-text.svg" alt="" srcset="">
+        </div>
+        <div class="heading">
+            <h1>We’ll be<br> back soon</h1>
+        </div>
+    </div>
 </body>
 
 </html>

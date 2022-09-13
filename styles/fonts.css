@@ -1,6 +1,7 @@
 
 @font-face {
       font-family: "New York";
+      font-weight: normal;
       src: url("../fonts/NewYork.otf") format("opentype");
 }
 
