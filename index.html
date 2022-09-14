@@ -8,48 +8,66 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/fonts.css">
     <style>
+        html,
         body {
-            overflow-x: hidden;
-            overflow-y: hidden;
-            margin: 0;
-            max-height: 100vh;
-            background-color: antiquewhite;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            height: 100%;
+            min-height: 100vh;
         }
 
+        body {
+            margin: 0;
+            overflow-x: hidden;
+            background-image: ;
+            /* overflow-y: hidden; */
+        }
+
+        .logo {
+            margin: 0 auto;
+            margin-top: 50px;
+            width: 156px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100%;
+            height: 100%;
+            /* padding: 20px 0; */
+        }
+
+        .heading {
+            /* display: flex;
+            justify-content: center;
+            width: 100%;
+            background-color: aqua;
+            margin: 0 auto;
+            max-width: 1920px;
+            height: fit-content; */
+        }
 
         h1 {
+            margin: 0;
             color: black;
             font-weight: normal;
             font-family: "New York";
             text-transform: capitalize;
             text-align: center;
-            line-height: 13vw;
-            /* font-size: 23vw; */
-            font-size: 20vw;
+            line-height: min(13vw, 160px);
+            font-size: min(18vw, 250px);
             letter-spacing: 0;
-            /* letter-spacing: 1.6vw; */
-
-
             white-space: nowrap;
         }
 
-        .heading {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            width: 100%;
+        .social {
             margin: 0 auto;
-            margin-top: -100px;
-            max-width: 1920px;
+            margin-bottom: 50px;
         }
 
-        .logo {
-            margin: 0 auto;
-            width: 12.68%;
-            height: 2%;
+        .social p {
+            margin: 0;
+            text-align: center;
+            font-family: "Neue Frutiger World";
         }
     </style>
 </head>
@@ -59,8 +77,12 @@
         <div class="logo">
             <img src="cdn/solovoi-logo-text.svg" alt="" srcset="">
         </div>
-        <div class="heading">
-            <h1>We’ll be<br> back soon</h1>
+        <h1>We’ll be<br> back soon</h1>
+        <div class="social">
+            <p>
+                you can reach us at<br>
+                info@solovoi.com | LinkedIn | Instagram
+            </p>
         </div>
     </div>
 </body>
