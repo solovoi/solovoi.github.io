@@ -31,7 +31,7 @@
         .logo {
             margin: 0 auto;
             margin-top: 50px;
-            width: 156px;
+            width: 230px;
         }
 
         .container {
@@ -77,9 +77,60 @@
             font-family: "Neue Frutiger World";
         }
 
+
+        .hoover-underline {
+            position: relative;
+        }
+
+        .hover-underline {
+            position: relative;
+        }
+
+        .hoover-underline::after {
+            content: '';
+            position: absolute;
+            background: #000;
+            display: block;
+            width: 0;
+            height: 2px;
+            left: 0;
+            bottom: -5px;
+            transition: width 0.5s ease;
+        }
+
+        .hover-underline::after {
+            content: '';
+            position: absolute;
+            background: black;
+            display: block;
+            width: 0;
+            height: 1px;
+            left: 0;
+            bottom: -5px;
+            transition: width 0.5s ease;
+        }
+
+        .hoover-underline:hover::after {
+            width: 100%;
+        }
+
+        .hover-underline:hover::after {
+            width: 100%;
+        }
+
         .social a {
             text-decoration: none;
             color: black;
+        }
+
+        @media (max-width: 480px) {
+            .social {
+                margin-bottom: 75px;
+            }
+
+            .logo {
+                margin-top: 75px;
+            }
         }
     </style>
 </head>
@@ -89,12 +140,13 @@
         <div class="logo">
             <img src="cdn/solovoi-logo-text.svg" alt="" srcset="">
         </div>
-        <h1>We’ll be<br> back soon</h1>
+        <h1>We’ll be<br>back soon</h1>
         <div class="social">
             <p>
                 you can reach us at<br>
-                <a href="mailto:info@solovoi.com">info@solovoi.com</a> | <a
-                    href="https://www.linkedin.com/company/solovoi/" target="_blank">LinkedIn</a> | <a
+                <a class="hover-underline" href="mailto:info@solovoi.com">info@solovoi.com</a> | <a
+                    class="hover-underline" href="https://www.linkedin.com/company/solovoi/"
+                    target="_blank">LinkedIn</a> | <a class="hover-underline"
                     href="https://www.instagram.com/solovoi.official/" target="_blank">Instagram</a>
             </p>
         </div>
